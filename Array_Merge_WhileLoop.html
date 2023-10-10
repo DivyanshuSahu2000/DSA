@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let data = [12, 13, 16, 22, 24, 27, 29, ];
+      let data2 = [1, 2, 5, 14, 15, 18, 25, 28, 33, 45, 48];
+      let data3 = [];
+
+      let d1 = 0;
+      let d2 = 0;
+      let d3 = 0;
+
+      while( d1<data.length && d2<data2.length){
+        if(data[d1]<data2[d2]){
+            data3[d3]=data[d1];
+            d1++
+        }
+        else{
+            data3[d3]=data2[d2];
+            d2++
+        } 
+        d3++
+      }
+      while(d2<data2.length){
+        data3[d3]=data2[d2];
+             d2++;
+             d3++;
+      }
+      console.log(data3)
+
+// ###########********================*********########### 
+
+let data4 = [12, 13, 16, 22, 24, 27, 29, ];
+      let data5 = [1, 2, 5, 14, 15, 18, 25, 28, 33, 45, 48];
+      let data6 = [7,11,16,17,20,49,50];
+
+      let d4 = 0;
+      let d5 = 0;
+      let d6 = 0;
+
+      while( d1<data.length && d2<data2.length){
+        if(data[d1]<data2[d2]){
+            data3[d3]=data[d1];
+            d1++
+        }
+        else{
+            data3[d3]=data2[d2];
+            d2++
+        } 
+        d3++
+      }
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

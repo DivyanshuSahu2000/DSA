@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.write(data);
+
+      function insertEl() {
+        let data = [1, 3, 4, 6, 44, 12, 66, 88, 89, 96, 99];
+        let newEl = document.getElementById("newEl").value;
+        newEl = parseInt(newEl);
+        let position = document.getElementById("position").value;
+        console.warn(data);
+
+        for (let i = data.length - 1; i >= 0; i--) {
+          if (i >= position) {
+            data[i + 1] = data[i];
+            if (i == position) {
+              data[i] = newEl;
+            }
+          } else {
+          }
+        }
+        console.warn(data);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="newEl" placeholder="type value" />
+    <input type="text" id="position" placeholder="type position" />
+    <button onclick="insertEl()">Isert Element</button>
+  </body>
+</html>

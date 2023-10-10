@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+
+// let data = [21, 22, 45, 66, 88, 90, 96, 97, 99];
+//         let element = 88
+//         // let index = undefined;
+//         console.log(data);
+//         for (i = 0; i < data.length; i++) {
+//           if (data[i] === parseInt(element)) {
+//         index=i;
+//             break;
+//           }
+//         }
+
+//         console.error(index);
+//         console.warn(data.indexOf(element));
+
+      function searchElem() {
+        let data = [21, 22, 45, 66, 88, 90, 96, 97, 99];
+        let element = document.getElementById("searchEl").value;
+        let index = undefined;
+        console.log(data);
+        for (i = 0; i < data.length; i++) {
+          if (data[i] === parseInt(element)) {
+        index=i;
+            break;
+          }
+        }
+
+        console.error(index);
+        // console.warn(data.indexOf Number(element));        (WRONG)
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="searchEl" placeholder="Type Input" />
+    <button onclick="searchElem()">Get Element</button>
+  </body>
+</html>

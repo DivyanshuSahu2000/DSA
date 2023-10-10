@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=, initial-scale=1.0"> -->
+    <title>Document</title>
+    <Script>
+
+
+let data = [2,5,8,90,43,78,65,67];
+// let i = 0;
+let data2 =false
+// let index = undefined
+// let filtered= data.filter((i)=> i%2===1);
+// console.warn(filtered)
+
+
+for( let i=0; i<data.length; i++){
+
+
+    if(data[i]%2==0 ){
+        data2="true"
+    }
+    else{
+
+        console.error(data[i])
+        data2='false'
+    }
+}
+
+
+for(let i=4 ; i<data.length; i=i+2){
+data[i] = data[i+2]
+}
+console.log(data)
+
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
