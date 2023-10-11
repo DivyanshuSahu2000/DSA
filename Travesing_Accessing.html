@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let data = [11, 1, 3, 33, 57, 43, 56];
+
+      //$$$$$********#######------TRAVERSING------#######********$$$$$//
+
+      function travesEl() {
+        for (let i = 0; i < data.length; i++) {
+          document.write(`${i} Element is : ${data[i]}<br/>`);
+        }
+      }
+
+      // =====*****======$$$$******ACCESSING******$$$$=====*****===== //
+
+      // let position= 3;
+      // document.write(data[position])
+
+      function getElement() {
+        let el = document.getElementById("element").value;
+        if (el < data.length && typeof parseInt(el) === "number") {
+          alert(data[el]);
+        } else {
+          alert("please text valid input");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="element" />
+    <button onclick="getElement()">GET ELEMENT</button>
+    
+    <button onclick="travesEl()">Travers ELEMENT</button>
+  </body>
+</html>
