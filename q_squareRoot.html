@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function getSqrt(){
+            let n = parseInt(document.getElementById('sqrt').value);
+            for(i=1; i<n/2; i++){
+                if(i*i===n){
+                    
+                    alert(i)
+                }alert("Not a Square Root");
+                break;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="sqrt" />
+    <button onclick='getSqrt()'>Get Sqrt</button>
+</body>
+</html>

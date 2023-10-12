@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function divisor(){
+    let n = document.getElementById("n").value;
+    n=parseInt(n);
+    if(n%3==0 && n%5==0){
+alert(`${n} is devisible by 3 and 5 `)
+    }
+   alert(`${n} is not divisble by 3 and 5`);
+
+}
+
+    </script>
+    <style>
+        *{
+            margin: auto ;
+            width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+           
+        }
+        
+        .id{
+            
+         background-color: #f10044; 
+         border: 1px solid #23037a; 
+        }
+    </style>
+</head>
+<body>
+   
+    <input type="text" id="n"  style="border:2px solid rgb(245, 124, 209);background-color:#eafafb;"/>
+    <button class="id" onclick="divisor()">Submit</button>
+</body>
+</html>

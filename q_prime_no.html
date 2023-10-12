@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // function prime(){
+      //     let num = parseInt(document.getElementById('num').value);
+      //     if(num%2==0 || num%3==0  ){
+
+      //         alert(`The Number ${num} Is not  A Prime Number`);
+
+      //     }
+      //     break();
+
+      //     if( num%5==0   ){
+
+      //         alert(`The Number ${num} Is not  A Prime Number`);
+      //     }
+
+      //     if(  num%7==0 ){
+
+      //         alert(`The Number ${num} Is not  A Prime Number`);
+      //     }else{
+      //         alert(`The Number ${num} Is  A Prime Number`)
+      //     }
+      // }
+
+      // function checkPrime() {
+      //   let nmbr = parseInt(document.getElementById("number").value);
+
+      //   for(let i = 2; i<= nmbr ;i++) {
+      //     if (nmbr % i === 0 ) {
+      //       alert(`The Number ${nmbr} Is not  A Prime Number`);
+      //       break;
+      //     } 
+      //       alert(`The Number ${nmbr} Is  A Prime Number`);
+      //       break;
+          
+      //   }
+      // }
+
+      
+// function checkPrime() {
+//  let num = parseInt(document.getElementById("number").value);
+
+//  if (num <= 1) {
+//     alert(`The Number ${num} Is not A Prime Number`);
+//     return;
+//  }
+
+//  for(let i = 2; i <= num; i++) {
+//     if (num % i === 0) {
+//       alert(`The Number ${num} Is not A Prime Number`);
+//       return;
+//     }
+//   }
+//   alert(`The Number ${num} Is A Prime Number`);
+
+// }
+
+function checkPrime() {
+ let num = parseInt(document.getElementById("number").value);
+
+ if (num <= 1) {
+    alert(`The Number ${num} Is not A Prime Number`);
+    return;
+ }
+
+ for(let i = 2; i <= num-1 ; i++) {
+    if (num % i === 0) {
+      alert(`The Number ${num} Is not A Prime Number`);
+      return;
+    }
+  }
+  alert(`The Number ${num} Is A Prime Number`);
+}
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <input type="text" id="number" />
+    <button onclick="checkPrime()">Check Prime Number</button>
+  </body>
+</html>
