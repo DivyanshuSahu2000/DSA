@@ -34,52 +34,47 @@
       //     if (nmbr % i === 0 ) {
       //       alert(`The Number ${nmbr} Is not  A Prime Number`);
       //       break;
-      //     } 
+      //     }
       //       alert(`The Number ${nmbr} Is  A Prime Number`);
       //       break;
-          
+
       //   }
       // }
 
-      
-// function checkPrime() {
-//  let num = parseInt(document.getElementById("number").value);
+      // function checkPrime() {
+      //  let num = parseInt(document.getElementById("number").value);
 
-//  if (num <= 1) {
-//     alert(`The Number ${num} Is not A Prime Number`);
-//     return;
-//  }
+      //  if (num <= 1) {
+      //     alert(`The Number ${num} Is not A Prime Number`);
+      //     return;
+      //  }
 
-//  for(let i = 2; i <= num; i++) {
-//     if (num % i === 0) {
-//       alert(`The Number ${num} Is not A Prime Number`);
-//       return;
-//     }
-//   }
-//   alert(`The Number ${num} Is A Prime Number`);
+      //  for(let i = 2; i <= num; i++) {
+      //     if (num % i === 0) {
+      //       alert(`The Number ${num} Is not A Prime Number`);
+      //       return;
+      //     }
+      //   }
+      //   alert(`The Number ${num} Is A Prime Number`);
 
-// }
+      // }
 
-function checkPrime() {
- let num = parseInt(document.getElementById("number").value);
+      function checkPrime() {
+        let num = parseInt(document.getElementById("number").value);
 
- if (num <= 1) {
-    alert(`The Number ${num} Is not A Prime Number`);
-    return;
- }
+        if (num <= 1) {
+          alert(`The Number ${num} Is not A Prime Number`);
+          return;
+        }
 
- for(let i = 2; i <= num-1 ; i++) {
-    if (num % i === 0) {
-      alert(`The Number ${num} Is not A Prime Number`);
-      return;
-    }
-  }
-  alert(`The Number ${num} Is A Prime Number`);
-}
-
-
-
-
+        for (let i = 2; i <= num - 1; i++) {
+          if (num % i === 0) {
+            alert(`The Number ${num} Is not A Prime Number`);
+            return;
+          }
+        }
+        alert(`The Number ${num} Is A Prime Number`);
+      }
     </script>
   </head>
   <body>

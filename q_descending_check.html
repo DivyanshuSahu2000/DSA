@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let n = [90, 54, 23, 22, , 11, 5, 1];
+      let isSorted = true;
+
+      for (let i = 0; i < n.length - 1; i++) {
+        if (n[i] < n[i + 1]) {
+          isSorted = false;
+          break;
+        }
+      }
+
+      if (isSorted) {
+        console.log("True");
+      } else {
+        console.log("False");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

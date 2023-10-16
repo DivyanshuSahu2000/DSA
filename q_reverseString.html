@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function makeReverse() {
+        let data = document.getElementById("reverse").value;
+        let size = data.length - 1;
+        let reverse = " ";
+        for (let i = size; i >= 0; i--) {
+          reverse += data[i];
+        }
+
+        alert(reverse);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="reverse" />
+    <button onclick="makeReverse()">MAke Reverse</button>
+  </body>
+</html>

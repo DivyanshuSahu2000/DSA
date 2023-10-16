@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getFactorialOfEl() {
+        let n = parseInt(document.getElementById("factorial").value);
+        let m = 1;
+        for (i = n; i >= 1; i--) {
+          m *= i;
+          // console.log([i])
+        }
+        alert(m);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="factorial" />
+    <button onclick="getFactorialOfEl()">Get factorial</button>
+  </body>
+</html>

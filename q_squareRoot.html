@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script>
-        function getSqrt(){
-            let n = parseInt(document.getElementById('sqrt').value);
-            for(i=1; i<n/2; i++){
-                if(i*i===n){
-                    
-                    alert(i)
-                }alert("Not a Square Root");
-                break;
-            }
+      // function getSqrt() {
+      //   let n = parseInt(document.getElementById("sqrt").value);
+      //   if (n <= 3) {
+      //     alert("Not a Square Root");
+      //   }
+      //   for (i = 1; i < n; i++) {
+      //     if (i * i === n) {
+      //       alert(i);
+      //     }  {
+      //    alert ("Not  Square Root");
+          
+      //     }
+      //   }
+      // }
+
+     function getSqrt(n){
+      // if (n<=3);
+      // return "not sqrt"
+      for(i=1; i<n;i++){
+        if(i*i===n){
+          return i
         }
-        
-    </script>
-</head>
-<body>
-    <input type="text" id="sqrt" />
-    <button onclick='getSqrt()'>Get Sqrt</button>
-</body>
+      }return 'Not a Square Root'
+     }
+     console.log(getSqrt(1024))
+
+//      function getSq(n){
+
+// for(i=1; i<n; i++){
+//   if(i*i===n){
+//     return i
+//   }
+
+// }
+// return 'dndfi';
+// }
+
+// console.log(getSq(49))
+        </script>
+  </head>
+  <body>
+    <!-- <input type="text" id="sqrt" />
+    <button onclick="getSqrt()">Get Sqrt</button> -->
+  </body>
 </html>

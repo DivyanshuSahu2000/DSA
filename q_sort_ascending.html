@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let data = [19, 13, 11, 12, 21, 20, 29, 54, 65];
+      for (let i = 0; i < data.length; i++) {
+        for (let j = 0; j < data.length; j++) {
+          if (data[j] > data[j + 1]) {
+            const temp = data[j];
+            data[j] = data[j + 1];
+            data[j + 1] = temp;
+          }
+        }
+      }
+      console.log(data);
+    </script>
+  </head>
+  <body></body>
+</html>
