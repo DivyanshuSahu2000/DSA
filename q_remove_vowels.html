@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function removeVowel(n) {
+        let vowels = "aeiouAEIOU";
+        let result = "";
+        for (let i = 0; i < n.length; i++) {
+          const char = n[i];
+          let isVowels = false;
+          for (let j = 0; j < vowels.length; j++) {
+            if (char === vowels[j]) {
+              isVowels = true;
+              break;
+            }
+          }
+          if (!isVowels) {
+            result += char;
+          }
+        }
+        return result;
+      }
+      const n = "this is A string with Vowels";
+      const result = removeVowel(n);
+      console.log(result);
+    </script>
+  </head>
+  <body></body>
+</html>

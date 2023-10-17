@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function factorialOfMax(num) {
+        let max = num[0];
+        for (let i = 1; i < num.length; i++) {
+          if (max < num[i]) {
+            max = num[i];
+          }
+        }
+        console.log(max);
+        function factorial(max) {
+          if (max == 0 || max == 1) {
+            return 1;
+          }
+          return max * factorial(max - 1);
+        }
+        //  let maximum = factorial(max)
+        return `the max is ${max} and the factorial is ${factorial(max)} `;
+        // let n= max;
+        // let result =1;
+
+        //   result *= i;
+        // console.log([i])
+
+        // alert(m);
+      }
+      let array = [2, 4, 5, 3, 1];
+      console.log(factorialOfMax(array));
+    </script>
+  </head>
+  <body></body>
+</html>
