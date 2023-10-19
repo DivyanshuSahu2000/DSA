@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let data1 = [211, 3, 24, 21, 5, 2];
+      let data2 = [34, 53, 23, 45];
+      let data3 = [33, 46, 78, 75, 9];
+      let mergedArray = [];
+      for (let i = 0; i < data1.length; i++) {
+        mergedArray.push(data1[i]);
+      }
+      for (let i = 0; i < data2.length; i++) {
+        mergedArray.push(data2[i]);
+      }
+      for (let i = 0; i < data3.length; i++) {
+        mergedArray.push(data3[i]);
+      }
+
+      console.log(mergedArray);
+
+      // #########********===============SEcond Method====================********######## //
+
+      for (i = 0; i < data1.length; i++) {
+        mergedArray[i] = data1[i];
+      }
+
+      for (i = 0; i < data2.length; i++) {
+        mergedArray[data1.length + i] = data2[i];
+      }
+
+      for (let i = 0; i < data3.length; i++) {
+        mergedArray[data1.length + data2.length + i] = data3[i];
+      }
+      console.warn(mergedArray);
+    </script>
+  </head>
+  <body></body>
+</html>
