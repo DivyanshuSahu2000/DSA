@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function removeDuplicate(string) {
+        let result = "";
+        for (let i = 0; i < string.length; i++) {
+          let isDuplicate = false;
+          for (let j = 0; j < result.length; j++) {
+            if (string[i] === result[j]) {
+              isDuplicate = true;
+              break;
+            }
+          }
+          if (!isDuplicate) {
+            result += string[i];
+          }
+        }
+        return result;
+      }
+      let input = "This is string with no repeat characters";
+      let str = removeDuplicate(input);
+      console.log(str);
+    </script>
+  </head>
+  <body></body>
+</html>
