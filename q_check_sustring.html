@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let string1 = "this string contains substring";
+      let substring1 = "substring";
+      if (string1.includes(substring1)) {
+        console.log(1 + true);
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      let string = "this string contains substring";
+      let substring = "substring";
+      let found = false;
+
+      for (let i = 0; i < string.length; i++) {
+        for (let j = 0; j < substring.length; j++) {
+          if (string[i + j] !== substring[j]) {
+            break;
+          }
+          if (j === substring.length - 1) {
+            found = true;
+            break;
+          }
+        }
+        if (found) {
+          break;
+        }
+      }
+
+      if (found) {
+        console.log(1 + true);
+      }
+    </script>
+  </body>
+</html>
