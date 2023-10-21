@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function isPalindrome(str) {
+    let reversed = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return str === reversed;
+}
+
+let string = 'level';
+console.log(isPalindrome(string)); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- function fibonacci(num) {
+    let sequence = [0, 1];
+    for (let i = 2; i < num; i++) {
+        sequence.push(sequence[i - 1] + sequence[i - 2]);
+    }
+    return sequence;
+}
+
+let num = 10;
+console.log(fibonacci(num)); // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] 
+
+
+Write a JavaScript function that takes an array of integers and a target integer as input and returns an array of two numbers from the array that add up to the target integer.
+-->

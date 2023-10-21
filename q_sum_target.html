@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   =============****** Write a JavaScript function that takes an array of integers and a target integer as input
+      //   and returns an array of TWO numbers from the array that add up to the target integer.*******============== //
+
+              function findTwoSum(arr, target) {
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === target) {
+              return [arr[i], arr[j]];
+            }
+          }
+        }
+        return []; // Return an empty array if no pair is found
+      }
+
+      const inputArray = [2, 11, 15, 7];
+      const targetSum = 9;
+      const result = findTwoSum(inputArray, targetSum);
+
+        console.log(`The pair [${result[0]}, ${result[1]}] adds up to the target sum.`);
+
+      //   =============****** Write a JavaScript function that takes an array of integers and a target integer as input
+      //   and returns an array of THREE numbers from the array that add up to the target integer.******============== //
+
+    //   function findTwoSum(arr, target) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //       for (let j = i + 1; j < arr.length; j++) {
+    //         for (let k = i + 2; k < arr.length; k++) {
+    //           if (arr[i] + arr[j] + arr[k] === target) {
+    //             return [arr[i], arr[j], arr[k]];
+    //           }
+    //         }
+    //       }
+    //     }
+    //     return []; // Return an empty array if no pair is found
+    //   }
+
+    //   const inputArray = [2, 1, 15, 6, 33];
+    //   const targetSum = 9;
+    //   const result = findTwoSum(inputArray, targetSum);
+
+    //   console.log(
+    //     `The pair [${result[0]}, ${result[1]}, ${result[2]}] adds up to the target sum.`
+    //   );
+    </script>
+  </body>
+</html>
