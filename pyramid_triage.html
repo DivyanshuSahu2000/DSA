@@ -6,22 +6,20 @@
     <title>Document</title>
     <script>
       function pyramid(n) {
-        const midPoint = Math.floor((2*n - 1) / 2);
+        const midPoint = Math.floor((2 * n - 1) / 2);
         for (let row = 0; row < n; row++) {
           let level = "";
-          for (let coloum = 0; coloum < 2 * n - 1; coloum++) {
+          for (let coloum = 0; coloum < n; coloum++) {
             if (midPoint - row <= coloum && midPoint + row >= coloum) {
-              level += "*";
+              level += "* ";
             } else {
               level += " ";
             }
           }
           console.log(level);
-          document.write(level)
         }
-        return
-        pyramid(4);
       }
+      pyramid(6);
     </script>
   </head>
   <body></body>

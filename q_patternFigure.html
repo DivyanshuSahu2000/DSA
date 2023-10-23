@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // $$$$$$======******======PATTERN1=======******=======$$$$$$$
+      //                          *
+      //                          * *
+      //                          * * *
+      //                          * * * *
+      console.log("PATTERN 1"); // for line break
+
+      function pattern1(n) {
+        for (let row = 1; row <= n; row++) {
+          let str = "";
+          for (let clm = 1; clm <= row; clm++) {
+            str += "* ";
+          }
+          console.log(str);
+        }
+      }
+      pattern1(5);
+
+      // // $$$$$$======******======PATTERN2=======******=======$$$$$$$ // //
+      // //                          * * * *                            // //
+      // //                          * * *                              // //
+      // //                          * *                                // //
+      // //                          *                                  // //
+      console.log("PATTERN 2"); // for line break
+
+      function pattern2(n) {
+        for (let row = 1; row <= n; row++) {
+          let str = "";
+          for (let clm = 1; clm <= n - row + 1; clm++) {
+            str += "* ";
+          }
+          console.log(str);
+        }
+      }
+      pattern2(4);
+
+      // // $$$$$$======******======PATTERN 3=======******=======$$$$$$$
+      // //                          1 1 1 1
+      // //                          2 2 2
+      // //                          3 3
+      // //                          4
+      console.log("PATTERN 3"); // for line break
+
+      function pattern3(n) {
+        for (let row = 1; row <= n; row++) {
+          let str = "";
+          for (let clm = 1; clm <= n - row + 1; clm++) {
+            str += row + " ";
+          }
+          console.log(str);
+        }
+      }
+      pattern3(4);
+
+      // // $$$$$$======******======PATTERN 4=======******=======$$$$$$$
+      // //                          1
+      // //                          1 2
+      // //                          1 2 3
+      // //                          1 2 3 4
+      console.log("PATTERN 4"); // for line break
+
+      function pattern4(n) {
+        for (let row = 1; row <= n; row++) {
+          let str = "";
+          for (let clm = 1; clm <= row; clm++) {
+            str += clm + " ";
+          }
+          console.log(str);
+        }
+      }
+      pattern4(4);
+
+      // $$$$$$======******======PATTERN 5=======******=======$$$$$$$
+      //                          * * * *
+      //                          * * * *
+      //                          * * * *
+      //                          * * * *
+      console.log("PATTERN 5"); // for line break
+
+      function pattern5(n) {
+        for (let row = 1; row <= n; row++) {
+          str = "";
+          for (let clm = 1; clm <= n; clm++) {
+            str += "* ";
+          }
+          console.log(str);
+          console.log(""); // for line
+        }
+      }
+      pattern5(4);
+
+      // $$$$$$======******======PATTERN 6=======******=======$$$$$$$
+      //                        *
+      //                        * *
+      //                        * * *
+      //                        * * * *
+      //                        * * * * *
+      //                        * * * * * *
+      //                        * * * * * * *
+      //                        * * * * * *
+      //                        * * * * *
+      //                        * * * *
+      //                        * * *
+      //                        * *
+      //                        *
+      console.log("PATTERN 6"); //for lne break
+
+      function pattern6(n) {
+        for (let row = 1; row <= n; row++) {
+          let str = "";
+          if (row < n) {
+            for (let col = 0; col < row; col++) {
+              str += "* ";
+            }
+            console.log(str);
+          } else {
+            for (let row = 1; row <= n; row++) {
+              let str = "";
+              for (let clm = 1; clm <= n - row + 1; clm++) {
+                str += "* ";
+              }
+              console.log(str);
+            }
+          }
+        }
+      }
+      pattern6(7);
+
+      // $$$$$$======******======PATTERN 7=======******=======$$$$$$$
+      //                         * * * * *
+      //                         * * * *
+      //                         * * *
+      //                         * *
+      //                         *
+      //                         * *
+      //                         * * *
+      //                         * * * *
+      //                         * * * * *
+      console.log("PATTERN 7"); //for lne break
+
+      function pattern7(n) {
+        for (let row = 1; row <= n; row++) {
+          let str = "";
+          if (row < n) {
+            for (let col = 0; col < n - row + 1; col++) {
+              str += "* ";
+            }
+            console.log(str);
+          } else {
+            for (let row = 1; row <= n; row++) {
+              let str = "";
+              for (let clm = 1; clm <= row; clm++) {
+                str += "* ";
+              }
+              console.log(str);
+            }
+          }
+        }
+      }
+      pattern7(5);
+    </script>
+  </head>
+  <body></body>
+</html>
