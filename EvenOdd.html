@@ -4,71 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+  </head>
+  <body>
     <script>
-      // <!-- let data = [21, 22, 45, 66, 88,  96, 97, 99]; -->
-      // let data2 = [];
-
+      //============type no and get no is even or oddd===========//
       function Get() {
         let data = document.getElementById("evenorodd").value;
 
-        // data = parseInt(evenorodd);
-        // for(i=0; i<=data.length; i++ ){
-        // if(data[i]%2==0){
-        //     console.alert("even")
-        // }
         if (data % 2 == 0) {
           console.log(" even");
-        }
-        else {
+        } else {
           console.log("odd");
         }
-        // console.log(data2[i])
       }
 
-
-let data = [1,2,4,12,33,55,32,56,77,33,18,9,90,31,42,29,88]
-let data2 =[]
-function EvenNo(){
-    for(i=0; i<=data.length; i++){
-    if (data[i] % 2 == 0) {
-        data2[i]=data[i]
-          console.log(data2[i]);
-          // document.write(data2[i])
-        }
-}}
-
-function OddNo(){
-    for(i=0; i<= data.length-1; i++){
-    if (data [i]% 2 !== 0) {
-        data2[i]=data[i]
-          
-        console.log(data2[i]);
-          // document.write(data2[i])
+      //======== Find even odd no from given array =============//
+      let data = [
+        1, 2, 4, 12, 33, 55, 32, 56, 77, 33, 18, 9, 90, 31, 42, 29, 88,
+      ];
+      let data2 = [];
+      function EvenNo() {
+        for (i = 0; i <= data.length; i++) {
+          if (data[i] % 2 == 0) {
+            data2[i] = data[i];
+            console.log(data2[i]);
+          }
         }
       }
-    }
-
-
+      function OddNo() {
+        for (i = 0; i <= data.length - 1; i++) {
+          if (data[i] % 2 !== 0) {
+            data2[i] = data[i];
+            console.log(data2[i]);
+          }
+        }
+      }
     </script>
-
-    <input type="text" id="evenorodd" />
+    <input type="number" id="evenorodd" placeholder="type number" />
     <button onclick="Get()">Get</button>
-
-
-
-    
+    <br />
+    <br />
     <button onclick="EvenNo()">EVEN</button>
     <button onclick="OddNo()">ODD</button>
-
-
-
-
-
-
-
-
-
-
-  </head>
-  <body></body>
+  </body>
 </html>
