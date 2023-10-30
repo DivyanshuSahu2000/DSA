@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script>
+      function deleteEl() {
+        let data = [12, 223, 55, 68, 78, 66, 90, 99, 16, 38];
+        let position = document.getElementById("position").value;
+        position = parseInt(position);
+        console.log(data);
+        for (let i = position; i < data.length - 1; i++) {
+          data[i] = data[i + 1];
+        }
+        data.length = data.length - 1;
+        console.log(data);
 
-function deleteEl(){
-    let data = [12,223,55,68,78,66,90,99,16,38];
-    let position = document.getElementById("position").value;
-    position = parseInt(position);
-    console.log(data)
-    for(let i= position; i<data.length-1; i++){
-        data[i]=data[i+1]
-
-    }
-    data.length =  data.length-1
-    console.log(data)
-
-    // ==============*****===========Short Method ============*****============
-    
-    data.splice(2,1);
-    console.log(data)
-    
-}
-    
-
+        // ==============*****===========Short Method ============*****============
+//data.slice(index value, )
+        data.splice(2, 1);
+        console.log(data);
+      }
+      // shortcut to add element from last of array ==== arr.pop()) //
     </script>
-
-</head>
-<body>
-    <input type="text" id="position" placeholder="Enter position"/>
-    <button onclick="deleteEl()"> Delet Element</button>
-</body>
+  </head>
+  <body>
+    <input type="text" id="position" placeholder="Enter position" />
+    <button onclick="deleteEl()">Delet Element</button>
+  </body>
 </html>

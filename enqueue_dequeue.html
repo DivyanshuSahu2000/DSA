@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let queue = [];
+      let max = 5;
+      let currentSize = queue.length;
+
+      // ======*****=======EnQueue=> add element in last======*****====== //
+      function enqueue(newEl) {
+        if (currentSize >= max) {
+          alert("Queue is full");
+        } else {
+          queue[currentSize] = newEl;
+          currentSize++;
+        }
+      }
+      // shortcut to add element in begining of array ==== arr.push(19) //
+
+      // ======*****=======Display======*****====== //
+      function display() {
+        console.log(queue);
+      }
+      // ======*****=======DeQueue=> remove element from begining======*****====== //
+      function deQueue() {
+        if (currentSize > 0) {
+          for (let i = 0; i < currentSize; i++) {
+            queue[i] = queue[i + 1];
+          }
+          currentSize--;
+          queue.length = currentSize;
+        } else {
+          alert("Queue is empty");
+        }
+      }
+      // shortcut to remove element from begining of array ==== arr.shift() //
+
+      enqueue(10);
+      enqueue(910);
+      enqueue(91);
+      enqueue(915);
+      //============**********=============//
+      deQueue();
+      deQueue();
+      //============**********=============//
+      display();
+    </script>
+  </body>
+</html>

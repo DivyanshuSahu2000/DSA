@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function product_excluding_itself(n) {
+        let result = [];
+        for (let i = 0; i < n.length; i++) {
+          let product = 1;
+          for (let j = 0; j < n.length; j++) {
+            if (i!= j) {
+              product *= n[j];
+            }
+          }
+          result.push(product);
+        }
+        return result;
+      }
+      console.log( product_excluding_itself([1,2,3,4])
+)    </script>
+  </body>
+</html>
