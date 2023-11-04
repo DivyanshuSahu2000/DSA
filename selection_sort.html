@@ -2,6 +2,7 @@
   <head>
     <title>Selection Sort with JavaScript</title>
     <script>
+      //==================Aescending Sort=================//
       let items = [20, 12, 53, 3,56,78,0,5,89,34];
       function selectionSort(data) {
         let minId;
@@ -20,6 +21,28 @@
 
       selectionSort(items);
       console.warn(items)
+//==================Descending Sort=================//
+let item = [20, 12, 53, 3,56,78,0,5,89,34,45,32,90];
+      function selectionSortDescending(data) {
+        let minId;
+        for (let i = 0; i < data.length; i++) {
+          minId = i;
+          for (let j = i + 1; j < data.length; j++) {
+            if (data[j] > data[minId]) {
+              minId = j;
+            }
+          }
+          let temp = data[minId];
+          data[minId] = data[i];
+          data[i] = temp;
+        }
+      }
+
+      selectionSortDescending(item);
+      console.warn(item)
+
+
+
     </script>
   </head>
   <body>

@@ -19,26 +19,25 @@
             }
             this.items[this.rear] = val;
             this.currentSize++;
-            if ((this.front == -1)) {
+            if (this.front == -1) {
               this.front = this.rear;
             }
           }
         }
-        dequeue(){
-            if(this.currentSize!=0){
-                this.items[this.front]=null;
-                if(this.front==this.max-1){
-                    this.front=0;
-                }else{
-                    this.front++;
-                }
-                this.currentSize--;
-                
-            }else{
-                this.front=-1;
-                this.rear=-1;
-                alert("queue is empty")
+        dequeue() {
+          if (this.currentSize != 0) {
+            this.items[this.front] = null;
+            if (this.front == this.max - 1) {
+              this.front = 0;
+            } else {
+              this.front++;
             }
+            this.currentSize--;
+          } else {
+            this.front = -1;
+            this.rear = -1;
+            alert("queue is empty");
+          }
         }
       }
 
