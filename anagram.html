@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram
+
+    </title>
+</head>
+<body>
+    <script>
+        function anagrams(str1, str2) {
+  // Remove spaces and convert both strings to lowercase
+  str1 = str1.replace(/\s/g, '').toLowerCase();
+  str2 = str2.replace(/\s/g, '').toLowerCase();
+
+
+  if (str1.length !== str2.length) {
+  return  console.log(`${word1} and ${word2} are not anagrams.`)
+  }
+  
+  // Sort the characters in both strings and compare them
+  const sortedStr1 = str1.split('').sort().join('');
+  const sortedStr2 = str2.split('').sort().join('');
+  
+  if( sortedStr1 === sortedStr2){
+    
+    console.log(`${word1} and ${word2} are anagrams.`)
+  }else{
+    console.log(`${word1} and ${word2} are not anagrams.`)
+  }
+  
+  
+}
+  
+
+const word1 = "listen";
+const word2 = "silent";
+anagrams(word1,word2);
+
+    </script>
+    </script>
+  </body>
+</html>
