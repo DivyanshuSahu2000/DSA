@@ -15,6 +15,23 @@
 
       let string = "level";
       console.log(isPalindrome(string));
+
+      // ============== UsingWhileLoop =============== //
+
+      function palindrome(data) {
+        let start = 0;
+        let end = data.length - 1;
+
+        while (start < end) {
+          if (data[start] !== data[end]) {
+            return false;
+          }
+          return true;
+        }
+      }
+      let stri = "abccba";
+
+      console.log(palindrome(stri));
     </script>
   </head>
   <body></body>
